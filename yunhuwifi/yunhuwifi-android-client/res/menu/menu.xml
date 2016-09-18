@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+		    <item
+		     android:id="@+id/menunewfile"
+			android:icon="@drawable/newfilepressed"
+			android:title="新建文件夹"
+		    />
+		    <item
+		     android:id="@+id/menuupload"
+			android:icon="@drawable/newfilepressed"
+			android:title="上传到路由器"
+		    />
+</menu>
+	

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99232323" >
+
+    <LinearLayout
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/umeng_update_dialog_bg"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/layitem0"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+            android:background="@drawable/longitembg"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:text="复制"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+
+
+
+            <RelativeLayout
+                 android:id="@+id/layitem1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+             android:background="@drawable/longitembg"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="剪切"
+                  android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/layitem2"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+             android:background="@drawable/longitembg"
+             android:visibility="gone"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="删除"
+                  android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                 android:id="@+id/layitem3"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+             android:background="@drawable/longitembg"
+              android:visibility="gone"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="重命名"
+                  android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/layitem4"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+             android:background="@drawable/longitembg"
+              android:visibility="gone"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="详细信息"
+                  android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+		<RelativeLayout
+                 android:id="@+id/layitem5"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+             android:background="@drawable/longitembg"
+                   android:visibility="gone"
+             android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="移动"
+                  android:textSize="18sp"
+                android:textColor="@color/black" />
+            
+        </RelativeLayout>
+        
+</LinearLayout>
+</RelativeLayout>

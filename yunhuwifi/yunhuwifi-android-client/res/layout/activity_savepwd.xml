@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white" 
+    android:orientation="vertical" 
+     xmlns:tools="http://schemas.android.com/tools"
+     tools:context=".SavePwdActivity"
+     android:layout_marginTop="20dp"
+     android:padding="20dp"
+     >
+
+            <com.yunhuwifi.view.PasswordEditText
+                android:id="@+id/newpwd"
+                style="@style/normalEditText"
+                android:drawableLeft="@drawable/icon_lock"
+                android:hint="请输入6-18位新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                />
+
+
+		 		<com.yunhuwifi.view.PasswordEditText
+		                android:id="@+id/againpwd"
+		                style="@style/normalEditText"
+		                android:layout_marginTop="10dp"
+		                android:drawableLeft="@drawable/icon_lock"
+		                android:hint="请重复输入新密码"
+		                  android:layout_below="@id/newpwd"
+		                android:inputType="textPassword"
+		                android:maxLength="20"
+		              />
+					 <Button
+			    android:id="@+id/savepwd"
+				style="@style/buttonPrimary"
+			    android:layout_below="@+id/againpwd"
+			    android:layout_marginTop="15dp"
+			    android:text="保存密码" />
+
+</LinearLayout>

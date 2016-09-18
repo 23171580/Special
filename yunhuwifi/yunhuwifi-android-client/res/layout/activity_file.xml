@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" 
+    android:orientation="vertical"
+     tools:context=".FileActivity">
+	
+    <ListView 
+        android:id="@+id/lvfile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#ffebebeb"
+        android:dividerHeight="1dp"
+        />	
+    
+</LinearLayout>

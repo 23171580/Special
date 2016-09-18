@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+           <RelativeLayout
+		          android:padding="10dip"
+		          android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+				android:background="@drawable/itembg"
+	                  android:descendantFocusability="blocksDescendants" 
+		          >
+
+		          <LinearLayout
+		              android:layout_width="match_parent"
+		              android:layout_height="wrap_content"
+		              android:layout_toLeftOf="@+id/layDowning"
+		              android:layout_toRightOf="@+id/ivIcon"
+		              android:orientation="vertical"
+		              android:layout_marginLeft="8dip"
+		              android:layout_marginRight="8dip"
+		              android:layout_centerVertical="true"
+		               >
+
+					          <TextView
+					              android:id="@+id/tvTitle"
+					              android:layout_width="wrap_content"
+				              	  android:layout_height="fill_parent"
+				              	  android:layout_weight="1"
+				              	  android:text="标题 "
+				              	   android:focusable="false"
+				              	  android:textColor="@drawable/cancelfontcolor"
+				              	  style="@style/text_large"
+				              	  android:gravity="left"
+					              />
+							   <LinearLayout 
+							          android:layout_width="match_parent"
+						              android:layout_height="wrap_content"
+						              android:orientation="horizontal"
+						              	  android:layout_weight="1">
+					          <TextView
+					              android:id="@+id/tvDescribe"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_weight="1"
+					              android:gravity="left"
+					               style="@style/text_small"
+					               android:textColor="@color/itemlefttoptext"
+					              android:text="200KB/s" />
+					          <TextView
+					              android:id="@+id/tvDowningSize"
+					              android:layout_width="wrap_content"
+					              android:layout_height="wrap_content"
+					              android:layout_weight="1"
+					              android:gravity="right"
+					               style="@style/text_small"
+									android:textColor="@color/itemlefttoptext"
+					              android:text="1.0GB" />
+							</LinearLayout>
+			          <ProgressBar 
+			               android:layout_width="fill_parent"
+						    android:layout_height="5dp"
+						 	 android:id="@+id/pbdowning"
+              				 style="?android:attr/progressBarStyleHorizontal"
+			              	  android:layout_weight="1"
+			              	  android:visibility="visible"
+			              	  android:progress="20"
+			              	  android:max="100"
+			              	  android:indeterminateOnly="false"
+			              	  android:focusable="false"
+			              	  android:progressDrawable="@drawable/pbselector"
+			              />
+							          <LinearLayout 
+							          android:layout_width="match_parent"
+						              android:layout_height="wrap_content"
+						              android:orientation="horizontal"
+						              	  android:layout_weight="1"
+						         	 >
+
+					              
+
+					                   <TextView
+					                   android:layout_weight="1"
+					                       android:id="@+id/tvDowningState"
+					                       style="@style/text_small"
+					                       android:layout_width="wrap_content"
+					                       android:layout_height="fill_parent"
+					                       android:focusable="false"
+					                       android:gravity="left"
+					                       android:textColor="@color/downcolor"
+					                       android:text="下载中..." />
+
+							          
+										
+					                <TextView
+							              android:id="@+id/tvDowningPercent"
+							              android:textColor="@color/downcolor"
+							              android:layout_width="wrap_content"
+							              android:layout_height="wrap_content"
+							              android:layout_weight="1"
+							              android:gravity="right"
+							              android:text="20%" 
+							               style="@style/text_small"
+							              android:visibility="visible"
+					              />
+					                
+				         		 	</LinearLayout>
+		          </LinearLayout>
+		          <LinearLayout 
+		              
+			              android:id="@+id/layDowning"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:orientation="horizontal"
+			                         android:layout_alignParentRight="true"
+			               android:layout_centerVertical="true"
+		              >
+ 					<Button
+			              android:id="@+id/viewOperate"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:focusable="false"
+			              android:layout_marginRight="10dp"
+			              android:background="@drawable/stopicon"
+			             />
+ 					<CheckBox
+			              android:id="@+id/cbitem"
+			              android:layout_width="wrap_content"
+			              android:layout_height="wrap_content"
+			              android:focusable="false"
+			              android:layout_marginRight="15dp"
+			              android:visibility="gone"
+			              style="@style/checkboxtheme" />
+		          
+				</LinearLayout>
+
+		          <ImageView
+		              android:id="@+id/ivIcon"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:layout_alignParentLeft="true"
+		              android:layout_centerVertical="true"
+		              android:scaleType="fitXY"
+		              android:src="@drawable/item3"
+		              android:visibility="visible" />
+
+		      </RelativeLayout>   
+		      
+</LinearLayout>
